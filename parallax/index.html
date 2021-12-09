@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <section>
+        <img src="background.jpeg" id="background">
+        <img src="sun.png" id="sun">
+        <img src="mountain.png" id="mountain">
+        
+        
+    </section>
+    <script type="text/javascript">
+       let bg = document.getElementById("background");
+       let leer = document.getElementById("sun");
+       let mountain = document.getElementById("mountain");
+       
+       window.addEventListener('scroll', function(){
+           var value = window.scrollY;
+
+           bg.style.top = value * 0.6 + 'px';
+           leer.style.left = -value * 0.6 + 'px';
+           mountain.style.top = -value * 0.50 + 'px';
+        
+       })
+    </script>
+    
+</body>
+</html>

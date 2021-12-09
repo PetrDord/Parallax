@@ -1,0 +1,49 @@
+
+
+*
+{
+margin:0;
+padding: 0;
+}
+body
+{
+    background: rgb(82, 39, 79);
+    min-height: 1500px;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section::before
+{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 175px;
+    background: linear-gradient(to top, rgb(82, 39, 79), transparent);
+    z-index: 3;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+#road
+{
+    z-index: 2;
+}
